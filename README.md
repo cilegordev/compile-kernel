@@ -1,5 +1,5 @@
 # Hardware -> Kernel -> Software
-- compile custom kernel https://www.kernel.org - latest
+- compile custom [kernel](https://www.kernel.org) - latest
 
 ## To fix wlan0 (PCIe Wireless) - in my case RTL8822CE
 - CONFIG_RTW88=m
@@ -12,7 +12,7 @@
 - CONFIG_RFKILL_INPUT=y
 - CONFIG_RFKILL_GPIO=y
 
-## To fix elan (Touchpad)  - in may case elan_i2c
+## To fix elan (Touchpad) - in may case elan_i2c
 - CONFIG_MOUSE_PS2_ELANTECH=y
 - CONFIG_MOUSE_PS2_ELANTECH_SMBUS=y
 - CONFIG_MOUSE_ELAN_I2C=y
@@ -21,18 +21,18 @@
 - CONFIG_HID_ELAN=m
 - CONFIG_PINCTRL_AMD=y
 
+## Add CONFIG_SYSTEM_TRUSTED_KEYS
+- Download here : [azurelinux-ca-20230216.pem](https://raw.githubusercontent.com/microsoft/azurelinux/refs/heads/3.0/SPECS/kernel/azurelinux-ca-20230216.pem)
+
 ## Webcam - in my case i disabled
 - Default
 
 ## Bluetooth - in my case i disabled
-- Default
+- Default card with pcie wireless
 
-## Mic
-- Install
-
-## Sound
+## Sound/Mic
 - Install
 
 ## To fix cpu,gpu (Brightness) - in my case amd
-- install firmware https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git - latest
-- install driver https://archive.mesa3d.org - 24.0.1
+- install firmware : [linux-firmware](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git) - latest
+- install driver : [mesa3d](https://archive.mesa3d.org) - 24.0.1
