@@ -2,6 +2,7 @@
 - compile custom [kernel](https://www.kernel.org) - latest
 
 ## To fix wlan0 (PCIe Wireless) - in my case RTL8822CE
+- CONFIG_WLAN=y
 - CONFIG_RTW88=m
 - CONFIG_RTW88_CORE=m
 - CONFIG_RTW88_PCI=m
@@ -13,6 +14,8 @@
 - CONFIG_RFKILL_GPIO=y
 
 ## To fix elan (Touchpad) - in may case elan_i2c
+- CONFIG_I2C_DESIGNWARE_CORE=m
+- CONFIG_I2C_DESIGNWARE_PLATFORM=m
 - CONFIG_MOUSE_PS2_ELANTECH=y
 - CONFIG_MOUSE_PS2_ELANTECH_SMBUS=y
 - CONFIG_MOUSE_ELAN_I2C=y
