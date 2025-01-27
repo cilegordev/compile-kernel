@@ -13,7 +13,10 @@
 - CONFIG_RFKILL_INPUT=y
 - CONFIG_RFKILL_GPIO=y
 
-## To fix elan (Touchpad) - in may case elan_i2c
+## To fix regulator (CRDA)
+- install Wireless regulatory : [wireless-regdb](https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git)
+
+## To fix hid (Elan Touchpad) - in may case elan_i2c
 - CONFIG_I2C_DESIGNWARE_CORE=m
 - CONFIG_I2C_DESIGNWARE_PLATFORM=m
 - CONFIG_MOUSE_PS2_ELANTECH=y
