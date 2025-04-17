@@ -27,6 +27,12 @@
 - CONFIG_HID_ELAN=m
 - CONFIG_PINCTRL_AMD=y
 
+## To fix usb0 (Android WiFi Hostpot) - in my case Tethring USB
+- CONFIG_USB_NET_RNDIS_HOST=m
+- CONFIG_USB_NET_RNDIS=m
+- CONFIG_USB_NET_CDC_SUBSET_ENABLE=m
+- CONFIG_USB_NET_CDC_SUBSET=m
+
 ## Add CONFIG_SYSTEM_TRUSTED_KEYS
 - Download here : [azurelinux-ca-20230216.pem](https://raw.githubusercontent.com/microsoft/azurelinux/refs/heads/3.0/SPECS/kernel/azurelinux-ca-20230216.pem)
 
