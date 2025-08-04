@@ -33,6 +33,9 @@
 - CONFIG_USB_NET_CDC_SUBSET_ENABLE=m
 - CONFIG_USB_NET_CDC_SUBSET=m
 
+## To fix exFAT (Partition) - in my case USB Drive
+- CONFIG_EXFAT_FS=y
+
 ## Add CONFIG_SYSTEM_TRUSTED_KEYS
 - Download here : [azurelinux-ca-20230216.pem](https://raw.githubusercontent.com/microsoft/azurelinux/refs/heads/3.0/SPECS/kernel/azurelinux-ca-20230216.pem)
 
