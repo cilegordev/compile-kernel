@@ -9,12 +9,10 @@
 - CONFIG_RTW88_8822C=m
 - CONFIG_RTW88_8822CE=m
 - CONFIG_RFKILL=y
-- CONFIG_RFKILL_LEDS=y
 - CONFIG_RFKILL_INPUT=y
-- CONFIG_RFKILL_GPIO=y
 
 ## To fix regulator (CRDA)
-- install wireless regulatory : [wireless-regdb](https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git) - latest
+- install wireless regulatory : [wireless-regdb](https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/w) - latest
 
 ## To fix hid (Elan Touchpad) - in my case elan_i2c
 - CONFIG_I2C_DESIGNWARE_CORE=m
@@ -35,6 +33,7 @@
 
 ## To fix exFAT (Partition) - in my case USB Drive
 - CONFIG_EXFAT_FS=y
+- CONFIG_EXFAT_DEFAULT_IOCHARSET="utf8"
 
 ## Add CONFIG_SYSTEM_TRUSTED_KEYS
 - Download here : [azurelinux-ca-20230216.pem](https://raw.githubusercontent.com/microsoft/azurelinux/refs/heads/3.0/SPECS/kernel/azurelinux-ca-20230216.pem)
